@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">OrbitSample</string>
 
+    <string name="main_currentnumber">Current number: %1$s</string>
+
     <string name="numbercontroller_increase">increase</string>
     <string name="numbercontroller_decrease">decrease</string>
     <string name="numbercontroller_print_as_toast">toasting</string>

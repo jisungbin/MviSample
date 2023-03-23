@@ -67,7 +67,7 @@ private fun ShowNumber(
 ) {
     Text(
         modifier = modifier,
-        text = "Current number: $number",
+        text = stringResource(R.string.main_currentnumber, number),
     )
 }
 

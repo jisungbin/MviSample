@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "mashup.study.mvi.orbitsample"
-        minSdk = 23
+        minSdk = 21
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -38,8 +38,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.compose.material3:material3:1.0.1")
     implementation("androidx.activity:activity-compose:1.6.1")
+    implementation("androidx.compose.material3:material3:1.0.1")
     implementation("org.orbit-mvi:orbit-compose:4.6.1")
 }
