@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "OrbitSample"
+rootProject.name = "MviSample"
 include(":app")
