@@ -37,12 +37,6 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.4"
     }
-
-    testOptions {
-        unitTests.all {
-            it.useJUnitPlatform()
-        }
-    }
 }
 
 dependencies {
