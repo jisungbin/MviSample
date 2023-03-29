@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "mashup.study.mvi.orbitsample"
+    namespace = "mvi.sample"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "mashup.study.mvi.orbitsample"
+        applicationId = "my.mvisample"
         minSdk = 21
         targetSdk = 33
         versionCode = 1

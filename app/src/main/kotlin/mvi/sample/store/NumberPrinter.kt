@@ -1,4 +1,4 @@
-package mashup.study.mvi.orbitsample.store
+package mvi.sample.store
 
 sealed class NumberPrinter {
     class Toast(val number: Int) : NumberPrinter()

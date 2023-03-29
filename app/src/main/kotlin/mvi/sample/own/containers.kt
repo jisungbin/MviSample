@@ -1,4 +1,4 @@
-package mashup.study.mvi.orbitsample.own
+package mvi.sample.own
 
 import android.annotation.SuppressLint
 import androidx.compose.runtime.Composable

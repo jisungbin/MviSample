@@ -1,10 +1,10 @@
-package mashup.study.mvi.orbitsample.store
+package mvi.sample.store
 
 import androidx.lifecycle.ViewModel
-import mashup.study.mvi.orbitsample.own.MviContainer
-import mashup.study.mvi.orbitsample.own.Store
-import mashup.study.mvi.orbitsample.own.intent
-import mashup.study.mvi.orbitsample.own.store
+import mvi.sample.own.MviContainer
+import mvi.sample.own.Store
+import mvi.sample.own.intent
+import mvi.sample.own.store
 
 class OwnStore : ViewModel(), MviContainer<Int, NumberPrinter> {
     override val store: Store<Int, NumberPrinter> = store(initialState = 0)

@@ -1,6 +1,7 @@
-package mashup.study.mvi.orbitsample.store
+package mvi.sample.store
 
 import kotlinx.coroutines.CoroutineScope
+import mvi.sample.store.NumberPrinter
 import org.orbitmvi.orbit.ContainerHost
 import org.orbitmvi.orbit.container
 import org.orbitmvi.orbit.syntax.simple.intent
