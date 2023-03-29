@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OrbitSample</string>
+    <string name="app_name">MviSample</string>
 
     <string name="main_currentnumber">Current number: %1$s</string>
 
