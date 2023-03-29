@@ -1,3 +1,4 @@
-# OrbitSample
+# Mvi Sample
 
-MashUp MVI Study!!
+- Own MVI framework
+- Orbit MVI framework
