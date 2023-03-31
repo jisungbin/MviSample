@@ -8,7 +8,7 @@ import org.orbitmvi.orbit.syntax.simple.reduce
 import org.orbitmvi.orbit.viewmodel.container
 
 class OrbitStore : ContainerHost<Int, NumberPrinter>, ViewModel() {
-    override val container = container<Int, NumberPrinter>(0)
+    override val container = container<Int, NumberPrinter>(initialState = 0)
 
     fun increase() = intent {
         reduce { state + 1 }
