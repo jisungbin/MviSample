@@ -6,7 +6,7 @@
         android:label="@string/app_name">
 
         <activity
-            android:name=".OwnActivity"
+            android:name=".OrbitActivity"
             android:exported="true">
 
             <intent-filter>

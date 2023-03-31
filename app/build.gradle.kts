@@ -43,4 +43,5 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.7.0")
     implementation("androidx.compose.material3:material3:1.0.1")
     implementation("org.orbit-mvi:orbit-compose:4.6.1")
+    implementation("org.orbit-mvi:orbit-viewmodel:4.6.1")
 }

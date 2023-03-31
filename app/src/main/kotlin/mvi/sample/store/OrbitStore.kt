@@ -1,18 +1,14 @@
 package mvi.sample.store
 
-import kotlinx.coroutines.CoroutineScope
-import mvi.sample.store.NumberPrinter
+import androidx.lifecycle.ViewModel
 import org.orbitmvi.orbit.ContainerHost
-import org.orbitmvi.orbit.container
 import org.orbitmvi.orbit.syntax.simple.intent
 import org.orbitmvi.orbit.syntax.simple.postSideEffect
 import org.orbitmvi.orbit.syntax.simple.reduce
+import org.orbitmvi.orbit.viewmodel.container
 
-class OrbitStore(
-    scope: CoroutineScope,
-    initialNumber: Int = 0,
-) : ContainerHost<Int, NumberPrinter> {
-    override val container = scope.container<Int, NumberPrinter>(initialNumber)
+class OrbitStore : ContainerHost<Int, NumberPrinter>, ViewModel() {
+    override val container = container<Int, NumberPrinter>(0)
 
     fun increase() = intent {
         reduce { state + 1 }

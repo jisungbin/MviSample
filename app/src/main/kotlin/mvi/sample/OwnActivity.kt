@@ -15,13 +15,13 @@ import mvi.sample.store.NumberPrinter
 import mvi.sample.store.OwnStore
 
 class OwnActivity : ComponentActivity() {
-    private val ownStore: OwnStore by viewModels()
+    private val vm: OwnStore by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            ownStore.collectSideEffect { sideEffect ->
+            vm.collectSideEffect { sideEffect ->
                 when (sideEffect) {
                     is NumberPrinter.Toast -> {
                         Toast.makeText(applicationContext, sideEffect.number.toString(), Toast.LENGTH_SHORT).show()
@@ -33,10 +33,10 @@ class OwnActivity : ComponentActivity() {
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(horizontal = 30.dp),
-                number = ownStore.collectAsState().value,
-                increase = ownStore::increase,
-                decrease = ownStore::decrease,
-                printAsToast = ownStore::printAsToast,
+                number = vm.collectAsState().value,
+                increase = vm::increase,
+                decrease = vm::decrease,
+                printAsToast = vm::printAsToast,
             )
         }
     }
